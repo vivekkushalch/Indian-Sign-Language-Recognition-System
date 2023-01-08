@@ -8,12 +8,12 @@
     "short_name": "Sanket",
     "description": "The App that Understands Everyone",
     "icons": [{
-            "src": "../assets/img/favicon.png",
+            "src": "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/assets/img/social-preview.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "../assets/img/favicon.png",
+            "src": "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/assets/img/social-preview.png",
             "sizes": "512x512",
             "type": "image/png"
         }
