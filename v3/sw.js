@@ -14,7 +14,7 @@ assets = [
     './assets/img/upload-icon.png',
     './assets/js/translate.js',
     './assets/styles/translate.css',
-    './assets/manifest.json'
+    './assets/pwa/manifest.json'
 
 ]
 
