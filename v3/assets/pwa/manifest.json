@@ -9,7 +9,7 @@
     "description": "The App that Understands Everyone",
     "icons": [{
             "src": "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/assets/img/social-preview.png",
-            "sizes": "192x192",
+            "sizes": "72x72 96x96 128x128 192x192 256x256 384x384",
             "type": "image/png"
         },
         {
