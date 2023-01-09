@@ -1,5 +1,5 @@
 assets = [
-    './',
+    '.',
     'index.html',
     './assets/img/arrow-back.png',
     './assets/img/bottom-sheet.png',
@@ -14,8 +14,7 @@ assets = [
     './assets/img/upload-icon.png',
     './assets/js/translate.js',
     './assets/styles/translate.css',
-    './assets/manifest.json',
-    './assets/*',
+    './assets/manifest.json'
 
 ]
 
