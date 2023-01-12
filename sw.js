@@ -5,7 +5,7 @@ assets = [
     './assets/img/bottom-sheet.png',
     './assets/img/camera-icon.png',
     './assets/img/controls-bg.png',
-    './assets/img/favicon.png',
+    '/Indian-Sign-Language-Recognition-System/assets/img/favicon.png',
     './assets/img/google-translate-icon.png',
     './assets/img/speaker-icon.png',
     './assets/img/transcript-expand-icon.png',
