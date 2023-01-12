@@ -116,8 +116,8 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 ////////////////////////////////////
 let model, webcam, ctx, labelContainer, maxPredictions;
 async function init() {
-    const modelURL = "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v2/model.json";
-    const metadataURL = "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v2/metadata.json";
+    const modelURL = "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/model.json";
+    const metadataURL = "https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/metadata.json";
 
     // load the model and metadata
     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
