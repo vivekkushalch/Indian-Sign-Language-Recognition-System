@@ -1,0 +1,21 @@
+{
+    "theme_color": "#D4EC7E",
+    "background_color": "#EAF1C5",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Sanket",
+    "short_name": "Sanket",
+    "description": "The App that Understands Everyone",
+    "icons": [{
+            "src": "/assets/img/favicon.png",
+            "sizes": "72x72 96x96 128x128 192x192 256x256 384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

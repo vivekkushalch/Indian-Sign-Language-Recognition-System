@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Propritory Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Sanket - Translate Sign Language</title>
+    <meta name="title" content="Sanket">
+    <meta name="description" content="The App that Understands Everyone!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/">
+    <meta property="og:title" content="Sanket">
+    <meta property="og:description" content="The App that Understands Everyone!">
+    <meta property="og:image" content="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/assets/img/social-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/">
+    <meta property="twitter:title" content="Sanket">
+    <meta property="twitter:description" content="The App that Understands Everyone!">
+    <meta property="twitter:image" content="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/v3/assets/img/social-preview.png">
+
+
+    <!-- links -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+
+
+    <!-- PWA Meta Tags -->
+    <!-- <meta name="theme-color" content="#D4EC7E"> -->
+    <link rel="apple-touch-icon" href="./assets/img/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Sanket">
+    <meta name="apple-mobile-web-app-title" content="Sanket">
+    <meta name="theme-color" content="#D4EC7E">
+    <meta name="msapplication-navbutton-color" content="#D4EC7E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- my -->
+
+    <link rel="stylesheet" href="./assets/styles/translate.css">
+    <script async differ src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script async differ src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div class="navbar">
+            <img src="./assets/img/arrow-back.png" id="back-btn" class="nav-btn" alt="back">
+            <img src="./assets/img/switch-cam.png" id="cam-switch-btn" class="nav-btn" alt="switch-camera">
+        </div>
+        <img src="assets/img/webcam_banner.png" alt="SANKET" id="webcam-banner">
+        <canvas id="canvas" class="webcam-view"></canvas>
+        <div class="transcript-wrapper">
+            <div class="transcript-tittle-bar-wrapper">
+                <img src="./assets/img/google-translate-icon.png" id="gtranslate-btn" alt="google translate">
+                <img src="./assets/img/transcript-heading.png" id="transcript-heading" alt="Transcript!">
+                <img src="./assets/img/transcript-expand-icon.png" id="expand-transcript-btn" alt="">
+            </div>
+            <div id="textarea"></div>
+            <img src="./assets/img/transcript-settings-icon.png" id="transcript-settings-btn" alt="transcript-settings">
+        </div>
+        <div class="quick-controls">
+            <img src="./assets/img/speaker-icon.png" id="gtts-btn" class="quick-btn" alt="speak">
+            <img src="./assets/img/camera-icon.png" id="camera-btn" class="quick-btn" alt="camera">
+            <img src="./assets/img/upload-icon.png" id="upload-btn" class="quick-btn" alt="upload photo">
+        </div>
+        <img src="./assets/img/bottom-sheet.png" id="bottom-sheet" alt="bottom-sheet">
+    </div>
+    <script src="./assets/js/translate.js" type="module">
+
+    </script>
+</body>
+
+</html>
