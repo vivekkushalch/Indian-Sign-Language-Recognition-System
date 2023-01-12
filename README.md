@@ -3,7 +3,7 @@
 </p>
 <p align="center">
 <b>Website:</b>
-[https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/](https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/)
+<a href="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/](https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System"/>
 </p>
 
 ### About
