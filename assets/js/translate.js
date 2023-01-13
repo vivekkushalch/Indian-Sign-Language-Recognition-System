@@ -4,9 +4,19 @@ let gttsBtn = document.getElementById('gtts-btn');
 let cameraBtn = document.getElementById('camera-btn');
 let uploadBtn = document.querySelector('#upload-btn');
 let textArea = document.querySelector('#textarea');
+let line = document.createElement('p');
+line.className = "line"
+line.id = "last-line"
+line.innerHTML = `Ready to roll !`
+textArea.appendChild(line)
+line.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest"
+});
 
 //open github repo
-document.querySelector('#webcam-banner').addEventListener('click', function() {
+document.querySelector('#webcam-banner').addEventListener('click', function () {
     window.open('https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System/', '_blank');
 })
 
@@ -28,7 +38,7 @@ async function addTestLines(totalLines) {
 }
 // addTestLines(10);
 
-uploadBtn.addEventListener('click', function() {
+uploadBtn.addEventListener('click', function () {
     uploadBtn.style.background = "#D4EC7E";
     let text = 'Comming Soon!'
     addNewTranslateLine(text)
@@ -63,7 +73,7 @@ async function addNewTranslateLine(text) {
 
 
 // start sign prediction
-cameraBtn.addEventListener("click", function() {
+cameraBtn.addEventListener("click", function () {
     if (cameraBtn.style.backgroundColor === 'rgb(212, 236, 126)') {
         cameraBtn.style.background = "#EAF1C5"; //deactivate btn
         alert('stopping... Press OK')
@@ -79,7 +89,7 @@ cameraBtn.addEventListener("click", function() {
 });
 
 // text to speach btn colour change
-gttsBtn.addEventListener("click", function() {
+gttsBtn.addEventListener("click", function () {
     if (gttsBtn.style.backgroundColor === 'rgb(212, 236, 126)') {
         gttsBtn.style.background = "#EAF1C5"; //dactivate btn
         // alert('stopping... Press OK')
@@ -138,12 +148,12 @@ async function init() {
     canvas.width = size;
     canvas.height = size;
     ctx = canvas.getContext("2d");
-    labelContainer = document.getElementById("textarea");
-    for (let i = 0; i < maxPredictions; i++) { // and class labels
-        let para = document.createElement("p");
-        para.className = "line";
-        labelContainer.appendChild(para);
-    }
+    // labelContainer = document.getElementById("textarea");
+    // for (let i = 0; i < maxPredictions; i++) { // and class labels
+    //     let para = document.createElement("p");
+    //     para.className = "line";
+    //     labelContainer.appendChild(para);
+    // }
 
 }
 
@@ -164,13 +174,20 @@ async function predict() {
     const prediction = await model.predict(posenetOutput);
 
     for (let i = 0; i < maxPredictions; i++) {
+        // if (prediction[i].probability.toFixed(2) == 1.00) {
+        //     console.log(prediction[i].probability.toFixed(2), prediction[i].className)
+        // }
         // const classPrediction =  prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-        if (prediction[i].probability.toFixed(2) == 1.0) {
+        if (prediction[i].probability.toFixed(2) == 1.00) {
+            if (document.querySelector('#last-line').innerHTML != prediction[i].className) {
+                addNewTranslateLine(prediction[i].className);
+            }
+
             // labelContainer.childNodes[i].innerHTML = prediction[i].className;
-            addNewTranslateLine(prediction[i].className);
+
             if (gttsBtn.style.backgroundColor === 'rgb(212, 236, 126)') { //btn active
                 tts(prediction[i].className)
-                await delay(1)
+                // delay(0)
             } else {
                 console.log('')
             }
@@ -187,7 +204,7 @@ function drawPose(pose) {
         ctx.drawImage(webcam.canvas, 0, 0);
         // draw the keypoints and skeleton
         if (pose) {
-            const minPartConfidence = 1.0; //0.5
+            const minPartConfidence = 0.5; //0.5
             tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
             tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
         }
