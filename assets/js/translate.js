@@ -138,12 +138,12 @@ async function init() {
     canvas.width = size;
     canvas.height = size;
     ctx = canvas.getContext("2d");
-    //labelContainer = document.getElementById("textarea");
-    //for (let i = 0; i < maxPredictions; i++) { // and class labels
-        //let para = document.createElement("p");
-        //para.className = "line";
-        //labelContainer.appendChild(para);
-    //}
+    labelContainer = document.getElementById("textarea");
+    for (let i = 0; i < maxPredictions; i++) { // and class labels
+        let para = document.createElement("p");
+        para.className = "line";
+        labelContainer.appendChild(para);
+    }
 
 }
 
