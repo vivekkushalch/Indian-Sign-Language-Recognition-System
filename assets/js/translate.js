@@ -104,7 +104,7 @@ gttsBtn.addEventListener("click", function () {
 
 
 //text to speech
-function tts(text) {
+async function tts(text) {
     if ('speechSynthesis' in window) {
         // Speech Synthesis is supported 🎉
         console.log('');
@@ -180,17 +180,18 @@ async function predict() {
         // const classPrediction =  prediction[i].className + ": " + prediction[i].probability.toFixed(2);
         if (prediction[i].probability.toFixed(2) == 1.00) {
             if (document.querySelector('#last-line').innerHTML != prediction[i].className) {
-                addNewTranslateLine(prediction[i].className);
+                await addNewTranslateLine(prediction[i].className);
+                if (gttsBtn.style.backgroundColor === 'rgb(212, 236, 126)') { //btn active
+                    await tts(prediction[i].className)
+                    // delay(0)
+                } else {
+                    console.log('')
+                }
             }
 
             // labelContainer.childNodes[i].innerHTML = prediction[i].className;
 
-            if (gttsBtn.style.backgroundColor === 'rgb(212, 236, 126)') { //btn active
-                tts(prediction[i].className)
-                // delay(0)
-            } else {
-                console.log('')
-            }
+            
         }
 
     }
