@@ -23,8 +23,7 @@ Sanket is a state of the art Sign Language Translator app that enables specially
 </p>
 
 
-### Project Preview
-https://user-images.githubusercontent.com/77581157/212113123-c3ac4174-7605-4778-8aca-8648473ec41e.mp4
+
 
 
 ### Our Team (Key 2 Innovation):
