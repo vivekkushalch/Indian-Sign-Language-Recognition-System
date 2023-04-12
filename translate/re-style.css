@@ -1,0 +1,173 @@
+:root {
+    --ultraLightGreen: #D3F1E9;
+    --lightGreen: #BCF3E5;
+    --brightGreen: #62E6BF;
+    --mediumGreen: #0DA778;
+    --deepGreen: #0A7B79;
+    --navyBlue: #193053;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+span:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: var(--ultraLightGreen);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.navbar {
+    min-width: 100%;
+    position: fixed;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar #nav-left span {
+    /* background-color: blue; */
+    color: var(--navyBlue);
+    text-decoration: none;
+    text-align: left;
+    font-size: 2rem !important;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.navbar #nav-right {
+    /* background-color: green; */
+    color: var(--navyBlue);
+    font-weight: 500;
+    text-align: right;
+    font-size: 2rem !important;
+    margin-right: 1.2rem;
+}
+
+.webcam-view img {
+    width: 100%;
+}
+
+.webcam-view canvas {
+    display: none;
+    width: 100%;
+    height: 25vh;
+}
+
+.webcam-view .prediction-overlay {
+    position: absolute;
+    text-align: center;
+    margin-top: -3.45rem;
+    width: 100%;
+    /* height: 2rem; */
+    /* background-color: var(--navyBlue); */
+    background-color: rgba(25, 48, 83, .65);
+    /* padding: 3px; */
+    /* opacity: .8; */
+}
+
+.webcam-view .prediction-overlay span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    /* opacity: 1; */
+}
+
+.transcript-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 20px;
+    height: 15rem;
+    width: 85%;
+    background: #f5f5f5;
+    border: 2px solid var(--navyBlue);
+    border-radius: 18px;
+}
+
+.transcript-title-bar-wrapper {
+    background-color: var(--navyBlue);
+    border-radius: 16px 16px 0px 0px;
+    /* border: 2px solid var(--navyBlue); */
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    /* grid-gap: 50px; */
+}
+
+.transcript-title-bar-wrapper #transcript-settings-btn {
+    /* grid-column: 2; */
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    /* padding-top: 12px; */
+    padding-left: 15px;
+}
+
+.transcript-title-bar-wrapper #transcript-text {
+    /* grid-column: 1; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    color: white;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 0;
+}
+
+
+/* .navbar {
+    position: absolute;
+    display: flex;
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar span {
+    margin-top: 1rem;
+    color: var(--navyBlue);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.navbar #nav-left {
+    float: left;
+    margin-left: 10px;
+}
+
+.navbar #nav-right {
+    float: left;
+    margin-left: 10px;
+} */
+
+
+/* .webcam-view img {
+    /* position: absolute; */
+
+
+/* min-width: 100vw; */
+
+
+/* }  */

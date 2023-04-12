@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- required -->
+    <link rel="icon" type="image/png" href="/assets/images/sanket-logo.png">
+    <title>Sanket - Contact Us</title>
+
+    <!-- loader stuff -->
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+
+<body>
+    <!-- loader -->
+    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+
+    <a href="/"><span class="material-symbols-rounded" id="back-arrow">arrow_back</span></a>
+
+    <img src="/assets/images/contact-us-illustration.png" alt="illustration" id="contact-us-illustration">
+
+    <a href="#">
+        <img src="/assets/images/contact-form.png" id="contact-form" alt="contact-form">
+    </a>
+
+    <img src="/assets/images/contact-us-footer.png" alt="footer" id="footer">
+
+</body>
+
+
+</html>

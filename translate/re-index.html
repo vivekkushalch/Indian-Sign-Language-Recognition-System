@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- required -->
+    <link rel="icon" type="image/png" href="/assets/images/sanket-logo.png">
+    <title>Sanket - Translate - Sign to Text</title>
+
+    <!-- page loader stuff -->
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts-import -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+</head>
+
+<body>
+    <!-- loader -->
+    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="/" id="nav-left">
+            <span class="material-symbols-rounded">arrow_back</span>
+        </a>
+        <span class="material-symbols-rounded" id="nav-right">cameraswitch</span>
+    </nav>
+    <!-- webcam-view -->
+    <div class="webcam-view">
+        <img src="https://placehold.co/600x400/0DA778/white?font=montserrat&text=Sign Language to Text" class="webcam-banner" alt="webcam-banner">
+        <canvas id="canvas"></canvas>
+        <div class="prediction-overlay">
+            <span id="prediction">U</span>
+        </div>
+    </div>
+    <!-- transcript -->
+    <div class="transcript-wrapper">
+        <div class="transcript-title-bar-wrapper">
+            <span class="material-symbols-rounded" id="#transcript-settings-btn">tune</span>
+            <div id="transcript-text">
+                <span class="material-symbols-rounded" id="gtranslate-btn">subtitles</span> Transcript
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    <script async defer src="sign-to-text.js"></script>
+</body>
+
+</html>
