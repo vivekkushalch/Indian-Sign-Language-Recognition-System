@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vivekkushalch/Indian-Sign-Language-Recognition-System/main/assets/img/sanket_readme_banner.jpg" alt="drawing" width="600"/>
+  <img src="https://user-images.githubusercontent.com/77581157/231389297-ec106b52-0072-4804-af49-84357594dd78.jpg" alt="drawing" width="600"/>
 </p>
 <p align="center">
 <b>Website:</b>
@@ -21,7 +21,7 @@ Sanket is a state of the art Sign Language Translator app that enables specially
 
 ### Ui Preview
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vivekkushalch/Indian-Sign-Language-Recognition-System/main/assets/img/sanket_ui_preview.png" alt="drawing" width="600"/>
+  <img src="https://user-images.githubusercontent.com/77581157/231389104-bb0a42f8-e6e8-448b-978e-4c83733e0e52.png" alt="drawing" width="600"/>
 </p>
 
 
