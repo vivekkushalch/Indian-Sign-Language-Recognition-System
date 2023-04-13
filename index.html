@@ -51,7 +51,7 @@
         };
     </script>
     <!-- custom styles -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- fonts-import -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,11 +60,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 
     <!-- sw/pwa -->
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
-                navigator.serviceWorker && navigator.serviceWorker.register("/sw.js");
+                navigator.serviceWorker && navigator.serviceWorker.register("sw.js");
             });
         }
     </script>
@@ -73,7 +73,7 @@
 
 <body>
     <!-- loader -->
-    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+    <img src="assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
     <!-- top navbar cum header -->
     <nav>
         <div class="nav-cointainer">
@@ -84,7 +84,7 @@
             </div>
             <div class="nav-right-content-wrapper">
                 <a href="/">
-                    <img id="user-pfp" src="/assets/images/demo-pfp.png">
+                    <img id="user-pfp" src="assets/images/demo-pfp.png">
                     <span class="notification-badge"></span>
                 </a>
             </div>
