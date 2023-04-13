@@ -224,7 +224,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 
 /////////////////////////////////////
 let index = 0
-const cheatText = ['I', `❤️`, 'I', 'N', 'D', 'I', 'A']
+const spamFilter = ['I', `❤️`, 'I', 'N', 'D', 'I', 'A']
 let beforeTextDone = 0;
 
 /////////////////////////////////////
@@ -281,9 +281,9 @@ async function predict() {
         // const classPrediction =  prediction[i].className + ": " + prediction[i].probability.toFixed(2);
         console.log(prediction[i].probability.toFixed(2), prediction[i].className)
         if (prediction[i].probability.toFixed(2) == 1.0) {
-            if (prediction[i].className == cheatText[index]) {
+            if (prediction[i].className == spamFilter[index]) {
                 index += 1;
-                if (index == cheatText.length) {
+                if (index == spamFilter.length) {
                     index = 0;
                 }
                 if (document.querySelector('#last-line').innerHTML != prediction[i].className) {
