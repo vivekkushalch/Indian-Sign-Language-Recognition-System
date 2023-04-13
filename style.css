@@ -38,12 +38,12 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url("/assets/fonts/Poppins-Regular.ttf");
+    src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: "Aclonica";
-    src: url("/assets/fonts/Aclonica-Regular.ttf");
+    src: url("./assets/fonts/Aclonica-Regular.ttf");
 }
 
 
