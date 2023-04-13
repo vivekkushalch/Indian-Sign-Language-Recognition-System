@@ -3,13 +3,13 @@
 </p>
 <p align="center">
 <b>Website:</b>
-  <a href="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System">https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System</a>
+  <a href="https://sanket.key2innovation.repl.co/">https://sanket.key2innovation.repl.co/</a>
 </p>
 
-### Our own Font for Indian sign Language: [ISL](https://github.com/Jeet-programmer/Indian-Sign-Language-Font)
+### Our own Font for Indian sign Language: [github repo](https://github.com/Jeet-programmer/Indian-Sign-Language-Font)
 
 ### About
-Sanket is a state of the art Sign Language Translator app that enables specially abeled people to communicate in real time.
+Sanket is a cross-platform app designed to make communication more accessible and inclusive for specially-abled people. The app can translate sign language gestures in real-time into and from text or voice, enabling frictionless communication between people who use sign language and those who do not.
 
 ### Features
 - PWA
@@ -17,7 +17,7 @@ Sanket is a state of the art Sign Language Translator app that enables specially
 - Text to Sign
 - Sign to Voice
 - Voice to Sign
-- All Voices and Transcripts are enhanced by Google Translate for a varity of Spoken Languages
+- All Voices and Transcripts are enhanced by Google Translate for a varity of Spoken Languages (WIP)
 
 ### Ui Preview
 <p align="center">
@@ -36,3 +36,4 @@ https://user-images.githubusercontent.com/77581157/212113123-c3ac4174-7605-4778-
 - Monoshiz Rai
 - Jeet Santra
 - Snigdhya Saha
+- Tuhin Kanti Panja
