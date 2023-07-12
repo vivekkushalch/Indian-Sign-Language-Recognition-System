@@ -24,11 +24,6 @@ Sanket is a cross-platform app designed to make communication more accessible an
   <img src="https://user-images.githubusercontent.com/77581157/231389104-bb0a42f8-e6e8-448b-978e-4c83733e0e52.png" alt="drawing" width="600"/>
 </p>
 
-
-### Project Preview
-https://user-images.githubusercontent.com/77581157/212113123-c3ac4174-7605-4778-8aca-8648473ec41e.mp4
-
-
 ### Our Team (Key 2 Innovation):
 - Hrishikesh Das
 - Vivek Kushal Chakraborty
@@ -37,3 +32,13 @@ https://user-images.githubusercontent.com/77581157/212113123-c3ac4174-7605-4778-
 - Jeet Santra
 - Snigdhya Saha
 - Tuhin Kanti Panja
+
+
+## License
+This project is licensed under the <a href="https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System/blob/main/LICENSE">GPL-3.0 License</a>
+
+-------
+
+<a href="https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vivekkushalch/Indian-Sign-Language-Recognition-System" />
+</a>
