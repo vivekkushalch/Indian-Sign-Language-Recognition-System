@@ -1,3 +1,4 @@
+<h1 align="center">SANKET - Sign Language Translator</h1>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/77581157/231389297-ec106b52-0072-4804-af49-84357594dd78.jpg" alt="drawing" width="600"/>
 </p>
@@ -5,6 +6,13 @@
 <b>Website:</b>
   <a href="https://sanket.key2innovation.repl.co/">https://sanket.key2innovation.repl.co/</a>
 </p>
+
+[![stars - Indian-Sign-Language-Recognition-System](https://img.shields.io/github/stars/vivekkushalch/Indian-Sign-Language-Recognition-System?style=social)](https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System)
+[![forks - Indian-Sign-Language-Recognition-System](https://img.shields.io/github/forks/vivekkushalch/Indian-Sign-Language-Recognition-System?style=social)](https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System)
+[![issues - Indian-Sign-Language-Recognition-System](https://img.shields.io/github/issues/vivekkushalch/Indian-Sign-Language-Recognition-System)](https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System/issues)
+[![GitHub release](https://img.shields.io/github/release/vivekkushalch/Indian-Sign-Language-Recognition-System?include_prereleases=&sort=semver&color=blue)](https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System/releases/)
+![Downloads](https://img.shields.io/github/downloads/vivekkushalch/Indian-Sign-Language-Recognition-System/total?l&color=green)
+
 
 ### Our own Font for Indian sign Language: [github repo](https://github.com/Jeet-programmer/Indian-Sign-Language-Font)
 
@@ -25,13 +33,13 @@ Sanket is a cross-platform app designed to make communication more accessible an
 </p>
 
 ### Our Team (Key 2 Innovation):
-- Hrishikesh Das
-- Vivek Kushal Chakraborty
-- Jeet Ghosh
-- Monoshiz Rai
-- Jeet Santra
-- Snigdhya Saha
-- Tuhin Kanti Panja
+- [Hrishikesh Das](https://github.com/hrishiD-codes) 
+- [Vivek Kushal Chakraborty](https://github.com/vivekkushalch)
+- [Jeet Ghosh](https://github.com/Jeet-programmer)
+- [Monoshiz Rai](https://github.com/Imon-stack)
+- [Jeet Santra](https://github.com/Developer-jeetS)
+- [Snigdhya Saha](https://github.com/snigdhya-saha)
+- [Tuhin Kanti Panja](https://github.com/programmertuhin)
 
 
 ## License
