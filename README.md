@@ -4,7 +4,7 @@
 </p>
 <p align="center">
 <b>Website:</b>
-  <a href="https://sanket.key2innovation.repl.co/">https://sanket.key2innovation.repl.co/</a>
+  <a href="https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/">https://vivekkushalch.github.io/Indian-Sign-Language-Recognition-System/</a>
 </p>
 
 [![stars - Indian-Sign-Language-Recognition-System](https://img.shields.io/github/stars/vivekkushalch/Indian-Sign-Language-Recognition-System?style=social)](https://github.com/vivekkushalch/Indian-Sign-Language-Recognition-System)
