@@ -24,10 +24,10 @@ contactUsCard.addEventListener("click", function() {
 
 //bottom nav
 navTranslteBtn.addEventListener("click", function() {
-    window.location = '/translate'
+    window.location = './translate'
 })
 navSettingsBtn.addEventListener("click", function() {
     navHomeBtn.classList.remove("active-nav-btn");
     navSettingsBtn.classList.add("active-nav-btn")
-    window.location = '/settings'
+    window.location = './settings'
 })
