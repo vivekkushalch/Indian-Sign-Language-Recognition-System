@@ -10,16 +10,16 @@ const contactUsCard = document.querySelector("#contact-us-card");
 
 //card nav
 translateCard.addEventListener("click", function() {
-    window.location = '/translate';
+    window.location = './translate';
 })
 learnCard.addEventListener("click", function() {
-    window.location = '/learn';
+    window.location = './learn';
 })
 contributeCard.addEventListener("click", function() {
     window.location = 'https://github.com/key2innovation';
 })
 contactUsCard.addEventListener("click", function() {
-    window.location = '/contact-us';
+    window.location = './contact-us';
 })
 
 //bottom nav
