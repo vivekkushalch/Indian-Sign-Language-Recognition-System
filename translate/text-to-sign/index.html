@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket - Text to Sign</title>
+
+    <!-- required -->
+    <link rel="icon" type="image/png" href="/assets/images/sanket-logo.png">
+    <title>Sanket - Home</title>
+
+    <!-- page loader stuff -->
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://jeet-programmer.github.io/Indian-Sign-Language-Font/styles.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200" />
+
+    <body>
+        <!-- loader -->
+        <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+        <!-- heading -->
+        <h1>Text to Sign</h1>
+        <!-- back-btn -->
+        <a href="/translate/"><img src="/assets/images/back-btn.png" id="back-btn" class="nav-btn" alt="back"></a>
+        <!-- player view -->
+        <div class="wrapper">
+            <div class="player-view">H</div>
+            <p id="player-text">H</p>
+        </div>
+        <!-- reader -->
+        <textarea name="text" id="text-area" cols="30" rows="10"></textarea>
+        <!-- quick-controls -->
+        <!-- <div class="quick-controls">
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">skip_previous</span>
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">pause</span>
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">skip_next</span>
+        </div> -->
+        <!-- message box -->
+        <div class="message-container">
+            <input type="text" class="message-input" id="message" name="message" placeholder="Type your message here">
+            <button class="send-btn" id="send-btn"><span class="material-symbols-rounded">send</span></button>
+        </div>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</html>

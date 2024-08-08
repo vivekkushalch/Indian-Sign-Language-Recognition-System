@@ -1,0 +1,305 @@
+/*
+1. :root variables/values
+2. font-face
+3. body
+4. top navbar cum header
+5. sanket heading
+6. home option cards
+7. bottom navbar
+8. media queries (Desktop)
+*/
+
+
+/***************************/
+
+
+/* root color variables+values */
+
+
+/**************************/
+
+:root {
+    --ultraLightGreen: #D3F1E9;
+    --lightGreen: #BCF3E5;
+    --brightGreen: #62E6BF;
+    --mediumGreen: #0DA778;
+    --deepGreen: #0A7B79;
+    --navyBlue: #193053;
+}
+
+
+/***************************/
+
+
+/* font face */
+
+
+/**************************/
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("./assets/fonts/Aclonica-Regular.ttf");
+}
+
+
+/***************************/
+
+
+/* global styles */
+
+
+/**************************/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--ultraLightGreen) !important;
+    min-height: 100vh;
+}
+
+
+/***************************/
+
+
+/* top navbar cum header */
+
+
+/**************************/
+
+.nav-cointainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.nav-left-content-wrapper {
+    margin-right: 3rem;
+    text-align: left;
+}
+
+.nav-left-content-wrapper h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: var(--deepGreen);
+}
+
+.nav-left-content-wrapper h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--navyBlue);
+}
+
+
+/* #user-name-underline {
+    border-bottom: 0.2rem solid var(--deepGreen);
+    border-radius: 1rem;
+    width: 2.5rem;
+} */
+
+.nav-right-content-wrapper {
+    position: relative;
+}
+
+#user-pfp {
+    display: inline-block;
+    position: relative;
+    margin-left: 3rem;
+    max-width: 2.5rem;
+    border: var(--mediumGreen) solid 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -1px;
+    right: 2px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid var(--lightGreen);
+}
+
+
+/***************************/
+
+
+/* sanket heading */
+
+
+/**************************/
+
+.sanket-heading-cointainer {
+    margin-top: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sanket-heading-cointainer h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--deepGreen);
+}
+
+
+/* .sanket-heading-cointainer span {
+    margin-top: -0.20rem;
+    border-bottom: 0.2rem solid var(--deepGreen);
+    border-radius: 1rem;
+    width: 5rem;
+} */
+
+.sanket-heading-cointainer p {
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--deepGreen);
+}
+
+
+/***************************/
+
+
+/* home option cards */
+
+
+/**************************/
+
+.home-options-wrapper {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin: auto;
+    margin-top: 2rem;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    width: 100%;
+    min-height: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.option-card img {
+    width: 9rem;
+    height: 11rem;
+}
+
+.option-card {
+    display: inline-block;
+    border: none;
+    background-color: var(--mediumGreen);
+    border-radius: 18px;
+    transition: background-color 0.25s ease;
+}
+
+.option-card:active {
+    height: 11rem;
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+#option-card-3 {
+    border: none;
+    background-color: none;
+}
+
+
+/***************************/
+
+
+/* bottom navbar */
+
+
+/**************************/
+
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    background: var(--lightGreen);
+    border-top: 3px solid rgba(1, 157, 146, 0.3);
+    padding-top: 7px;
+}
+
+.nav-btn {
+    display: inline-block;
+    left: 0;
+    border: none;
+    text-align: center;
+    color: var(--navyBlue);
+    background-color: var(--lightGreen);
+}
+
+.nav-btn span {
+    border-radius: 18px;
+    padding: 2px 15px 2px 15px;
+}
+
+.nav-btn p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.active-nav-btn span {
+    background-color: var(--brightGreen);
+}
+
+
+/***************************/
+
+
+/* media queries DESKTOP */
+
+
+/**************************/
+
+@media only screen and (min-width: 1080px) {
+    .option-card {
+        cursor: pointer;
+    }
+    .nav-btn {
+        cursor: pointer;
+    }
+    .home-options-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .option-card:hover {
+        background-color: #193053;
+    }
+}

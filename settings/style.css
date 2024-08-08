@@ -1,0 +1,95 @@
+:root {
+    --ultraLightGreen: #D3F1E9;
+    --lightGreen: #BCF3E5;
+    --brightGreen: #62E6BF;
+    --mediumGreen: #0DA778;
+    --deepGreen: #0A7B79;
+    --navyBlue: #193053;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("/assets/fonts/Aclonica-Regular.ttf");
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--ultraLightGreen) !important;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#mockup {
+    display: block;
+    /* max-width: 25%; */
+    /* position: absolute; */
+    /* width: 50%; */
+    /* height: 50%; */
+}
+
+.active-nav-btn span {
+    background-color: var(--brightGreen);
+}
+
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    background: var(--lightGreen);
+    border-top: 3px solid rgba(1, 157, 146, 0.3);
+    padding-top: 7px;
+}
+
+.nav-btn {
+    display: inline-block;
+    left: 0;
+    border: none;
+    text-align: center;
+    color: var(--navyBlue);
+    background-color: var(--lightGreen);
+}
+
+.nav-btn span {
+    cursor: pointer;
+    border-radius: 18px;
+    padding: 2px 15px 2px 15px;
+}
+
+.nav-btn p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.navbar #nav-home {}
+
+.active-nav-btn span {
+    background-color: var(--brightGreen);
+}
+
+@media only screen and (min-width: 1080px) {
+    #mockup {
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

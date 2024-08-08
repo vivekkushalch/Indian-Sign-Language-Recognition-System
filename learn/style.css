@@ -1,0 +1,212 @@
+:root {
+    --ultraLightGreen: #D3F1E9;
+    --lightGreen: #BCF3E5;
+    --brightGreen: #62E6BF;
+    --mediumGreen: #0DA778;
+    --deepGreen: #0A7B79;
+    --navyBlue: #193053;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    /* cursor: pointer; */
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: var(--navyBlue);
+}
+
+a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    display: block;
+    background-color: var(--ultraLightGreen);
+    width: 100vw;
+    height: 100vh;
+}
+
+#back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#learn-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 2.5rem;
+}
+
+.content-wrapper {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center
+    /* width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-auto-flow: column; */
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-auto-rows: auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; */
+}
+
+.content-wrapper .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 9rem;
+    height: 10rem;
+    /* background-color: #A0D6FF; */
+    border: 2px solid #4CA7ED;
+    margin: 1rem;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 1rem; */
+    /* font-family: "Poppins"; */
+    /* font-size: 1.3rem; */
+    /* font-weight: 400; */
+    /* background-color: #A0D6FF;
+    -webkit-box-shadow: 0px 10px 0px 0px rgba(76, 167, 237, 1);
+    -moz-box-shadow: 0px 10px 0px 0px rgba(76, 167, 237, 1);
+    box-shadow: 0px 5px 0px 0px rgba(76, 167, 237, 1); */
+    color: var(--navyBlue);
+    border-radius: 18px;
+    transition: background-color 0.25s ease;
+}
+
+.content-wrapper .item .icon {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.content-wrapper .item .text {
+    text-align: center;
+    /* font-family: "Poppins"; */
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.content-wrapper .item:active {
+    user-select: none !important;
+    touch-action: manipulation !important;
+    /* height: 11rem; */
+    outline: none !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+    transform: translateY(2px);
+}
+
+#learn-alphabets-btn {
+    background-color: #A0D6FF;
+    -webkit-box-shadow: 0px 10px 0px 0px rgba(76, 167, 237, 1);
+    -moz-box-shadow: 0px 10px 0px 0px rgba(76, 167, 237, 1);
+    box-shadow: 0px 5px 0px 0px rgba(76, 167, 237, 1);
+}
+
+#learn-numbers-btn {
+    background-color: #F3C0FE;
+    border-color: #CF7FE0;
+    /* -webkit-box-shadow: 0px 10px 0px 0px #CF7FE0;
+    -moz-box-shadow: 0px 10px 0px 0px #CF7FE0; */
+    box-shadow: 0px 5px 0px 0px #CF7FE0;
+}
+
+#learn-colours-btn {
+    background-color: #F4A7A8;
+    border-color: #EB8183;
+    -webkit-box-shadow: 0px 10px 0px 0px #EB8183;
+    -moz-box-shadow: 0px 10px 0px 0px #EB8183;
+    box-shadow: 0px 5px 0px 0px #EB8183;
+}
+
+#learn-animals-btn {
+    background-color: #D4C5FF;
+    border-color: #A083F4;
+    -webkit-box-shadow: 0px 10px 0px 0px #A083F4;
+    -moz-box-shadow: 0px 10px 0px 0px #A083F4;
+    box-shadow: 0px 5px 0px 0px #A083F4;
+}
+
+#learn-months-btn {
+    background-color: #FFE78F;
+    border-color: #DDBD47;
+    -webkit-box-shadow: 0px 10px 0px 0px #DDBD47;
+    -moz-box-shadow: 0px 10px 0px 0px #DDBD47;
+    box-shadow: 0px 5px 0px 0px #DDBD47;
+}
+
+#learn-days-btn {
+    background-color: #EFEFEF;
+    border-color: #7D8088;
+    -webkit-box-shadow: 0px 10px 0px 0px #7D8088;
+    -moz-box-shadow: 0px 10px 0px 0px #7D8088;
+    box-shadow: 0px 5px 0px 0px #7D8088;
+}
+
+#learn-food-btn {
+    background-color: #85FEDA;
+    border-color: #47C9A2;
+    -webkit-box-shadow: 0px 10px 0px 0px #47C9A2;
+    -moz-box-shadow: 0px 10px 0px 0px #47C9A2;
+    box-shadow: 0px 5px 0px 0px #47C9A2;
+}
+
+#learn-emotions-btn {
+    background-color: #FFDEFA;
+    border-color: #F27FA5;
+    -webkit-box-shadow: 0px 10px 0px 0px #F27FA5;
+    -moz-box-shadow: 0px 10px 0px 0px #F27FA5;
+    box-shadow: 0px 5px 0px 0px #F27FA5;
+}
+
+@media only screen and (min-width: 1080px) {
+    #learn-header {
+        width: 10rem;
+    }
+    .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: fit-content;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: center
+    }
+    .content-wrapper .item {
+        width: 8rem;
+        height: 8rem;
+    }
+    a:hover {
+        background-color: red;
+    }
+}

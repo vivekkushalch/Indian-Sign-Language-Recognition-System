@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Propritory Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Sanket - Translate Sign Language</title>
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+    <!-- my -->
+
+    <link rel="stylesheet" href="style.css">
+    <!--  -->
+    <!-- <script async defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script> -->
+    <script src="/assets/lib/tf.min.js"></script>
+    <!-- <script async defer src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script> -->
+    <script async defer src="/assets/lib/teachablemachine-image.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <!-- bottom sheet -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async differ type="module" src="/assets/lib/downupPopup/downupPopup.js"></script>
+    <link rel="stylesheet" href="/assets/lib/downupPopup/downupPopup.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/materia/bootstrap.min.css"> -->
+
+
+</head>
+
+<body>
+    <!-- loader -->
+    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+    <div class="cointainer">
+        <div class="navbar">
+            <img src="/assets/images/back-btn.png" id="back-btn" class="nav-btn" alt="back">
+            <img src="/assets/images/camera-switch-btn.png" id="cam-switch-btn" class="nav-btn" alt="switch-camera">
+        </div>
+        <img src="assets/img/webcam_banner.png" alt="SANKET" id="webcam-banner">
+        <div id="canvas" class="webcam-view"></div>
+        <div class="transcript-wrapper">
+            <div class="transcript-tittle-bar-wrapper">
+                <img src="/assets/images/transcript-settings.png" id="transcript-settings-btn" alt="settings">
+                <img src="/assets/images/transcript-heading.png" id="transcript-heading" alt="Transcript!">
+                <div id="expand-transcript-btn" alt=""></div>
+            </div>
+            <div id="textarea"></div>
+            <img src="/assets/images/translate-details.png" id="transcript-details-btn" alt="transcript-settings">
+        </div>
+        <div class="quick-controls">
+            <img src="/assets/images/speaker.png" id="gtts-btn" class="quick-btn" alt="speak">
+            <img src="/assets/images/camera-icon.png" id="camera-btn" class="quick-btn" alt="camera">
+            <img src="/assets/images/photo-upload.png" id="upload-btn" class="quick-btn" alt="upload photo">
+            <input type="file" accept="image/*" id="file-input">
+        </div>
+        <!-- <img src="./assets/img/bottom-sheet.png" id="bottom-sheet" alt="bottom-sheet"> -->
+        <a href="text-to-sign/"><img src="/assets/images/bottom-sheet-btn.png" id="bottom-sheet"></a>
+        <!-- <button id="btn-1">OPEN SHEET</button>
+        <div id="myElement1">
+            <div class="downupPopup-content">
+            </div>
+        </div> -->
+
+    </div>
+    <script src="app.js" type="module"></script>
+    <!-- <script src="bottom-sheet.js"></script> -->
+
+</body>
+
+</html>

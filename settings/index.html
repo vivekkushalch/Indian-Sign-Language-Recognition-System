@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket - Settings</title>
+    <!-- required -->
+    <link rel="icon" type="image/png" href="/assets/images/sanket-logo.png">
+    <title>Sanket - Home</title>
+
+    <!-- page loader stuff -->
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- extarnal fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+</head>
+
+<body>
+    <!-- loader -->
+    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+    <!-- mockup -->
+    <img src="/assets/images/settings-mockup.png" alt="mockup" id="mockup">
+    <!-- bottom-nav -->
+    <div class="bottom-nav-bar">
+        <button class="nav-btn" id="nav-home">
+            <span class="material-symbols-rounded">Home</span>
+            <p>Home</p>
+        </button>
+        <button class="nav-btn" id="nav-translate">
+            <span class="material-symbols-rounded">translate</span>
+            <p>Translate</p>
+        </button>
+        <button class="nav-btn  active-nav-btn" id="nav-settings">
+            <span class="material-symbols-rounded">settings_suggest</span>
+            <p>Settings</p>
+        </button>
+    </div>
+    <script module async defer src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- required -->
+    <link rel="icon" type="image/png" href="/assets/images/sanket-logo.png">
+    <title>Sanket - Learn - Colours</title>
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <style>
+        @font-face {
+            font-family: "Poppins";
+            src: url("/assets/fonts/Poppins-Regular.ttf");
+        }
+        
+        body {
+            font-family: 'Poppins';
+            background-color: #D3F1E9 !important;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: #193053;
+        }
+        
+        #back-arrow img {
+            width: 1.3rem;
+        }
+        
+        #back-arrow {
+            position: absolute;
+            color: #193053;
+            top: 10px;
+            left: 10px;
+            font-size: 0.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 5px;
+            border: 2px solid #193053;
+            border-radius: 100%;
+        }
+        
+        #underline {
+            margin: auto;
+            margin-top: -1rem;
+            border-bottom: 0.35rem solid #193053;
+            border-radius: 1rem;
+            width: 5rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-top: 2rem;
+            padding: 0;
+        }
+        
+        ul li {
+            padding-bottom: 1.5rem;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 15rem;
+            margin: auto;
+            border: 2px red;
+            border-radius: 18px;
+        }
+        
+        @media only screen and (min-width: 1080px) {
+            iframe {
+                max-width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- loader -->
+    <img src="/assets/images/sanket-logo.png" id="loader" class="center" alt="loader" srcset="">
+    <a href="/learn" id="back-arrow"><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back"></a>
+    <h1>Colours</h1><span id="underline"></span>
+    <ul>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/qtrBGmioR2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/LdteQif1Xxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+
+    </ul>
+
+    </iframe>
+
+</body>
+
+</html>
