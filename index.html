@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanket - Sign Language Made Simple</title>
+    <style>
+      :root {
+        --primary-color: #63dbb3;
+        --secondary-color: #d2f3eb;
+        --text-color: #333;
+        --bg-color: #f4f6f9;
+        --white: #ffffff;
+        --light-gray: #f0f0f0;
+        --muted-text: #777;
+        --shadow: rgba(0, 0, 0, 0.06);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      header {
+        background: var(--primary-color);
+        color: var(--white);
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .cta-button {
+        display: inline-block;
+        margin-top: 30px;
+        background: var(--white);
+        color: var(--primary-color);
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .cta-button:hover {
+        background: var(--secondary-color);
+      }
+
+      .features {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+      }
+
+      .feature-card {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px var(--shadow);
+        transition: transform 0.2s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .feature-card h3 {
+        margin-bottom: 10px;
+        color: var(--primary-color);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px 20px;
+        background: var(--light-gray);
+        font-size: 0.9rem;
+        color: var(--muted-text);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sanket</h1>
+      <p>
+        Bridging the gap between communication and inclusivity through Sign
+        Language.
+      </p>
+      <a href="#" class="cta-button">Download the App</a>
+    </header>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Live Sign Translation</h3>
+        <p>
+          Translate gestures to text in real-time using AI-powered recognition.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Learn Sign Language</h3>
+        <p>
+          Interactive lessons and daily practice to help you learn sign language
+          at your own pace.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Connect & Communicate</h3>
+        <p>
+          Connect with the Deaf community and practice real conversations via
+          chat and video tools.
+        </p>
+      </div>
+    </section>
+
+    <footer>© 2025 Sanket. All rights reserved.</footer>
+  </body>
+</html>
